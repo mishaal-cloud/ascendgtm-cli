@@ -1,0 +1,41 @@
+{
+  "name": "ascendgtm-cli",
+  "version": "0.1.0",
+  "description": "Official CLI for Ascend GTM — script the public agent-facing MCP tools and site markdown pages from the terminal.",
+  "type": "module",
+  "bin": {
+    "ascendgtm": "./dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json && chmod +x dist/cli.js",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "ascend-gtm",
+    "cli",
+    "mcp",
+    "agent-tools"
+  ],
+  "author": "Mishaal Murawala",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mishaal-cloud/ascendgtm-cli.git"
+  },
+  "homepage": "https://www.ascendgtm.net",
+  "dependencies": {
+    "commander": "^15.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.11",
+    "@types/node": "^26.4.0"
+  }
+}
