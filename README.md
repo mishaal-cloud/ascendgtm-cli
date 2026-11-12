@@ -38,7 +38,7 @@ ascendgtm --help
 
 ### `ascendgtm about`
 
-Canonical Ascend GTM facts — positioning, principal, services, pricing, ICP, methodology.
+Canonical Ascend GTM facts: positioning, principal, the three steps, pricing, ICP, method.
 
 ```bash
 $ ascendgtm about
@@ -51,17 +51,18 @@ $ ascendgtm about
 
 ### `ascendgtm pricing [--json]`
 
-The full pricing menu: fixed-scope fix sprints, the GTM Program retainer, hourly advisory.
+The pricing menu: the Pipeline Baseline, the fixed-price repairs and Embedded Marketing Leadership.
 
 ```bash
 $ ascendgtm pricing
 {
-  "fix_sprints": [
-    { "name": "Attribution & Tracking Repair", "price_usd": 5500, ... },
+  "working_session": { "price_usd": 0, ... },
+  "pipeline_baseline": { "price_usd": 5000, ... },
+  "repairs": [
+    { "name": "Attribution and Tracking Repair", "price_usd": 5500, ... },
     ...
   ],
-  "gtm_program": { "price_usd_per_month": 10000, ... },
-  "advisory_hourly": { "price_usd_per_hour": 300, ... }
+  "embedded_marketing_leadership": { "price_usd_per_month": 10000, ... }
 }
 ```
 
