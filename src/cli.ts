@@ -41,7 +41,7 @@ async function runTool(
 
 program
   .command("about")
-  .description("Canonical Ascend GTM facts: positioning, principal, services, pricing, ICP, methodology.")
+  .description("Canonical Ascend GTM facts: positioning, principal, the three steps, pricing, ICP, method.")
   .option("--json", "print raw JSON instead of formatted text")
   .action(async (opts: { json?: boolean }) => {
     await runTool("ascend_about", {}, Boolean(opts.json));
@@ -49,7 +49,7 @@ program
 
 program
   .command("pricing")
-  .description("The full Ascend GTM pricing menu: fixed-scope sprints, the GTM Program retainer, and hourly advisory.")
+  .description("The Ascend GTM pricing menu: the Pipeline Baseline, the fixed-price repairs and Embedded Marketing Leadership.")
   .option("--json", "print raw JSON instead of formatted text")
   .action(async (opts: { json?: boolean }) => {
     await runTool("ascend_pricing", {}, Boolean(opts.json));
